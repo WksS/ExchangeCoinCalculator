@@ -1,0 +1,10 @@
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\bin\Debug\ExchangeCalculator.exe.config
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\bin\Debug\ExchangeCalculator.exe
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\bin\Debug\ExchangeCalculator.pdb
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.csprojAssemblyReference.cache
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.ExchangeCalculator.resources
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.Properties.Resources.resources
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.csproj.GenerateResource.cache
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.exe
+C:\Users\Nathan\source\repos\ExchangeCalculator\ExchangeCalculator\obj\Debug\ExchangeCalculator.pdb
