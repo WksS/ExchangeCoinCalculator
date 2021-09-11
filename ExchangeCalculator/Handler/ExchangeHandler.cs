@@ -18,16 +18,16 @@ namespace ExchangeCalculator.Handler
                     var jsonResult = await response.Content.ReadAsStringAsync();
                     JObject jsonJObject = JObject.Parse(jsonResult);
                     string bid = (string)jsonJObject.SelectToken($"{from}BRL.bid");
+  
                     if (bid == null)
                     {
-                        return "Could not return API values!";
+                        return "Could not return values for API!";
                     }
 
                     if (bid.Contains("."))
                     {
                         return bid.Replace(".", ",");
                     }
-
                     return bid;
                 }
                 catch (HttpRequestException exception)

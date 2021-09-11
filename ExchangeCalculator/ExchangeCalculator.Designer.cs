@@ -2,15 +2,8 @@
 {
     partial class ExchangeCalculator
     {
-        /// <summary>
-        /// Variável de designer necessária.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpar os recursos que estão sendo usados.
-        /// </summary>
-        /// <param name="disposing">true se for necessário descartar os recursos gerenciados; caso contrário, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,12 +13,6 @@
             base.Dispose(disposing);
         }
 
-        #region Código gerado pelo Windows Form Designer
-
-        /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
-        /// </summary>
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExchangeCalculator));
@@ -131,6 +118,7 @@
             // 
             this.TextBoxResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
             this.TextBoxResult.Enabled = false;
+            this.TextBoxResult.ForeColor = System.Drawing.SystemColors.Control;
             this.TextBoxResult.Location = new System.Drawing.Point(326, 423);
             this.TextBoxResult.Multiline = true;
             this.TextBoxResult.Name = "TextBoxResult";
@@ -205,8 +193,6 @@
             this.PerformLayout();
 
         }
-
-        #endregion
 
         private System.Windows.Forms.Panel PanelMain;
         private System.Windows.Forms.Panel PanelTitle;
