@@ -29,137 +29,155 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExchangeCalculator));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelTitle = new System.Windows.Forms.Panel();
-            this.Title = new System.Windows.Forms.Label();
-            this.valueToConvert = new System.Windows.Forms.TextBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.labelEnterValue = new System.Windows.Forms.Label();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
-            this.labelTo = new System.Windows.Forms.Label();
-            this.comboBoxType = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel1.SuspendLayout();
-            this.panelTitle.SuspendLayout();
+            this.PanelMain = new System.Windows.Forms.Panel();
+            this.PictureArrow = new System.Windows.Forms.PictureBox();
+            this.PanelTitle = new System.Windows.Forms.Panel();
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.TextBoxValue = new System.Windows.Forms.TextBox();
+            this.ButtonCalculate = new System.Windows.Forms.Button();
+            this.LabelEnterValue = new System.Windows.Forms.Label();
+            this.TextBoxResult = new System.Windows.Forms.TextBox();
+            this.LabelTo = new System.Windows.Forms.Label();
+            this.ComboBoxType = new System.Windows.Forms.ComboBox();
+            this.LabelResult = new System.Windows.Forms.Label();
+            this.PanelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureArrow)).BeginInit();
+            this.PanelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // PanelMain
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
-            this.panel1.Controls.Add(this.panelTitle);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 491);
-            this.panel1.TabIndex = 0;
+            this.PanelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(63)))));
+            this.PanelMain.Controls.Add(this.PictureArrow);
+            this.PanelMain.Controls.Add(this.PanelTitle);
+            this.PanelMain.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMain.Location = new System.Drawing.Point(0, 0);
+            this.PanelMain.Margin = new System.Windows.Forms.Padding(5);
+            this.PanelMain.Name = "PanelMain";
+            this.PanelMain.Size = new System.Drawing.Size(233, 491);
+            this.PanelMain.TabIndex = 0;
             // 
-            // panelTitle
+            // PictureArrow
             // 
-            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.panelTitle.Controls.Add(this.Title);
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Margin = new System.Windows.Forms.Padding(5);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(233, 123);
-            this.panelTitle.TabIndex = 0;
+            this.PictureArrow.Image = ((System.Drawing.Image)(resources.GetObject("PictureArrow.Image")));
+            this.PictureArrow.Location = new System.Drawing.Point(67, 238);
+            this.PictureArrow.Name = "PictureArrow";
+            this.PictureArrow.Size = new System.Drawing.Size(69, 84);
+            this.PictureArrow.TabIndex = 1;
+            this.PictureArrow.TabStop = false;
             // 
-            // Title
+            // PanelTitle
             // 
-            this.Title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.Title.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.Title.ForeColor = System.Drawing.SystemColors.Control;
-            this.Title.Location = new System.Drawing.Point(14, 9);
-            this.Title.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(203, 97);
-            this.Title.TabIndex = 0;
-            this.Title.Text = "Exchange Rate \r\nCalculator";
-            this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PanelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.PanelTitle.Controls.Add(this.LabelTitle);
+            this.PanelTitle.Location = new System.Drawing.Point(0, 0);
+            this.PanelTitle.Margin = new System.Windows.Forms.Padding(5);
+            this.PanelTitle.Name = "PanelTitle";
+            this.PanelTitle.Size = new System.Drawing.Size(233, 123);
+            this.PanelTitle.TabIndex = 0;
             // 
-            // valueToConvert
+            // LabelTitle
             // 
-            this.valueToConvert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
-            this.valueToConvert.Font = new System.Drawing.Font("Century Gothic", 22F);
-            this.valueToConvert.ForeColor = System.Drawing.SystemColors.Control;
-            this.valueToConvert.Location = new System.Drawing.Point(454, 79);
-            this.valueToConvert.Multiline = true;
-            this.valueToConvert.Name = "valueToConvert";
-            this.valueToConvert.Size = new System.Drawing.Size(147, 44);
-            this.valueToConvert.TabIndex = 1;
-            this.valueToConvert.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LabelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.LabelTitle.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.LabelTitle.ForeColor = System.Drawing.SystemColors.Control;
+            this.LabelTitle.Location = new System.Drawing.Point(14, 9);
+            this.LabelTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(203, 97);
+            this.LabelTitle.TabIndex = 0;
+            this.LabelTitle.Text = "Exchange Rate \r\nCalculator";
+            this.LabelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnCalculate
+            // TextBoxValue
             // 
-            this.btnCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.btnCalculate.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCalculate.Location = new System.Drawing.Point(436, 326);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(179, 70);
-            this.btnCalculate.TabIndex = 3;
-            this.btnCalculate.Text = "Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = false;
+            this.TextBoxValue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
+            this.TextBoxValue.Font = new System.Drawing.Font("Century Gothic", 22F);
+            this.TextBoxValue.ForeColor = System.Drawing.SystemColors.Control;
+            this.TextBoxValue.Location = new System.Drawing.Point(381, 79);
+            this.TextBoxValue.MaxLength = 15;
+            this.TextBoxValue.Multiline = true;
+            this.TextBoxValue.Name = "TextBoxValue";
+            this.TextBoxValue.Size = new System.Drawing.Size(328, 44);
+            this.TextBoxValue.TabIndex = 1;
+            this.TextBoxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBoxValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxValue_KeyPress);
             // 
-            // labelEnterValue
+            // ButtonCalculate
             // 
-            this.labelEnterValue.AutoSize = true;
-            this.labelEnterValue.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.labelEnterValue.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelEnterValue.Location = new System.Drawing.Point(375, 26);
-            this.labelEnterValue.Name = "labelEnterValue";
-            this.labelEnterValue.Size = new System.Drawing.Size(334, 33);
-            this.labelEnterValue.TabIndex = 4;
-            this.labelEnterValue.Text = "Enter a value to convert";
+            this.ButtonCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.ButtonCalculate.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCalculate.ForeColor = System.Drawing.SystemColors.Control;
+            this.ButtonCalculate.Location = new System.Drawing.Point(447, 295);
+            this.ButtonCalculate.Name = "ButtonCalculate";
+            this.ButtonCalculate.Size = new System.Drawing.Size(186, 75);
+            this.ButtonCalculate.TabIndex = 3;
+            this.ButtonCalculate.Text = "Calculate";
+            this.ButtonCalculate.UseVisualStyleBackColor = false;
+            this.ButtonCalculate.Click += new System.EventHandler(this.ButtonCalculate_Click);
             // 
-            // textBoxResult
+            // LabelEnterValue
             // 
-            this.textBoxResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
-            this.textBoxResult.Location = new System.Drawing.Point(268, 452);
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.Size = new System.Drawing.Size(584, 27);
-            this.textBoxResult.TabIndex = 5;
+            this.LabelEnterValue.AutoSize = true;
+            this.LabelEnterValue.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.LabelEnterValue.ForeColor = System.Drawing.SystemColors.Control;
+            this.LabelEnterValue.Location = new System.Drawing.Point(375, 26);
+            this.LabelEnterValue.Name = "LabelEnterValue";
+            this.LabelEnterValue.Size = new System.Drawing.Size(334, 33);
+            this.LabelEnterValue.TabIndex = 4;
+            this.LabelEnterValue.Text = "Enter a value to convert";
             // 
-            // labelTo
+            // TextBoxResult
             // 
-            this.labelTo.AutoSize = true;
-            this.labelTo.Font = new System.Drawing.Font("Century Gothic", 20F);
-            this.labelTo.ForeColor = System.Drawing.SystemColors.Control;
-            this.labelTo.Location = new System.Drawing.Point(505, 146);
-            this.labelTo.Name = "labelTo";
-            this.labelTo.Size = new System.Drawing.Size(51, 33);
-            this.labelTo.TabIndex = 6;
-            this.labelTo.Text = "To:";
+            this.TextBoxResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
+            this.TextBoxResult.Enabled = false;
+            this.TextBoxResult.Location = new System.Drawing.Point(326, 423);
+            this.TextBoxResult.Multiline = true;
+            this.TextBoxResult.Name = "TextBoxResult";
+            this.TextBoxResult.ReadOnly = true;
+            this.TextBoxResult.Size = new System.Drawing.Size(506, 56);
+            this.TextBoxResult.TabIndex = 5;
             // 
-            // comboBoxType
+            // LabelTo
             // 
-            this.comboBoxType.AutoCompleteCustomSource.AddRange(new string[] {
+            this.LabelTo.AutoSize = true;
+            this.LabelTo.Font = new System.Drawing.Font("Century Gothic", 20F);
+            this.LabelTo.ForeColor = System.Drawing.SystemColors.Control;
+            this.LabelTo.Location = new System.Drawing.Point(391, 147);
+            this.LabelTo.Name = "LabelTo";
+            this.LabelTo.Size = new System.Drawing.Size(294, 33);
+            this.LabelTo.TabIndex = 6;
+            this.LabelTo.Text = "Select a type of coin:";
+            // 
+            // ComboBoxType
+            // 
+            this.ComboBoxType.AutoCompleteCustomSource.AddRange(new string[] {
             "Dolar",
             "Euro"});
-            this.comboBoxType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
-            this.comboBoxType.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxType.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.comboBoxType.ForeColor = System.Drawing.SystemColors.Control;
-            this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Items.AddRange(new object[] {
+            this.ComboBoxType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(54)))), ((int)(((byte)(62)))));
+            this.ComboBoxType.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.ComboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxType.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.ComboBoxType.ForeColor = System.Drawing.SystemColors.Control;
+            this.ComboBoxType.FormattingEnabled = true;
+            this.ComboBoxType.Items.AddRange(new object[] {
             "Dolar",
             "Euro"});
-            this.comboBoxType.Location = new System.Drawing.Point(454, 200);
-            this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(147, 38);
-            this.comboBoxType.TabIndex = 7;
+            this.ComboBoxType.Location = new System.Drawing.Point(381, 200);
+            this.ComboBoxType.Name = "ComboBoxType";
+            this.ComboBoxType.Size = new System.Drawing.Size(328, 38);
+            this.ComboBoxType.TabIndex = 7;
             // 
-            // comboBox1
+            // LabelResult
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "oi",
-            "fudido"});
-            this.comboBox1.Location = new System.Drawing.Point(708, 156);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(96, 29);
-            this.comboBox1.TabIndex = 8;
+            this.LabelResult.AutoSize = true;
+            this.LabelResult.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelResult.ForeColor = System.Drawing.SystemColors.Control;
+            this.LabelResult.Location = new System.Drawing.Point(241, 438);
+            this.LabelResult.Name = "LabelResult";
+            this.LabelResult.Size = new System.Drawing.Size(86, 28);
+            this.LabelResult.TabIndex = 8;
+            this.LabelResult.Text = "Result:";
             // 
             // ExchangeCalculator
             // 
@@ -167,21 +185,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(864, 491);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboBoxType);
-            this.Controls.Add(this.labelTo);
-            this.Controls.Add(this.textBoxResult);
-            this.Controls.Add(this.labelEnterValue);
-            this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.valueToConvert);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.LabelResult);
+            this.Controls.Add(this.ComboBoxType);
+            this.Controls.Add(this.LabelTo);
+            this.Controls.Add(this.TextBoxResult);
+            this.Controls.Add(this.LabelEnterValue);
+            this.Controls.Add(this.ButtonCalculate);
+            this.Controls.Add(this.TextBoxValue);
+            this.Controls.Add(this.PanelMain);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ExchangeCalculator";
             this.Text = "Exchange Calculator";
-            this.panel1.ResumeLayout(false);
-            this.panelTitle.ResumeLayout(false);
+            this.PanelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureArrow)).EndInit();
+            this.PanelTitle.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,15 +208,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panelTitle;
-        private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.TextBox valueToConvert;
-        private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Label labelEnterValue;
-        private System.Windows.Forms.TextBox textBoxResult;
-        private System.Windows.Forms.Label labelTo;
-        private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Panel PanelMain;
+        private System.Windows.Forms.Panel PanelTitle;
+        private System.Windows.Forms.Label LabelTitle;
+        private System.Windows.Forms.TextBox TextBoxValue;
+        private System.Windows.Forms.Button ButtonCalculate;
+        private System.Windows.Forms.Label LabelEnterValue;
+        private System.Windows.Forms.TextBox TextBoxResult;
+        private System.Windows.Forms.Label LabelTo;
+        private System.Windows.Forms.ComboBox ComboBoxType;
+        private System.Windows.Forms.PictureBox PictureArrow;
+        private System.Windows.Forms.Label LabelResult;
     }
 }
