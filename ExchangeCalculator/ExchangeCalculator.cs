@@ -18,10 +18,9 @@ namespace ExchangeCalculator
 
         private void TextBoxValue_KeyPress(object sender, KeyPressEventArgs e)
         {
-            char dot = ',';
             //char[] pontucations = { '.', '!', '#', '"', '#', '%', '$', '&', '(', ')', '*', '-', '/', ':', ';', '?', '@', '[', ']', '_', '{', '}' };
-            if (char.IsLetter(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsWhiteSpace(e.KeyChar) || double.IsNegativeInfinity(e.KeyChar) || char.IsPunctuation(e.KeyChar) && e.KeyChar != ',' || e.KeyChar == ',' && dot > 2)
-            {
+            if (char.IsLetter(e.KeyChar) || char.IsSymbol(e.KeyChar) || char.IsWhiteSpace(e.KeyChar) || double.IsNegativeInfinity(e.KeyChar) || char.IsPunctuation(e.KeyChar) && e.KeyChar != ',')
+            { 
                 e.Handled = true;
             }
         }
