@@ -88,6 +88,7 @@
             this.TextBoxValue.Size = new System.Drawing.Size(328, 44);
             this.TextBoxValue.TabIndex = 1;
             this.TextBoxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TextBoxValue.TextChanged += new System.EventHandler(this.TextBoxValue_TextChanged);
             this.TextBoxValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxValue_KeyPress);
             // 
             // ButtonCalculate
@@ -155,6 +156,7 @@
             this.ComboBoxType.Name = "ComboBoxType";
             this.ComboBoxType.Size = new System.Drawing.Size(328, 38);
             this.ComboBoxType.TabIndex = 7;
+            this.ComboBoxType.SelectedIndexChanged += new System.EventHandler(this.ComboBoxType_SelectedIndexChanged);
             // 
             // LabelResult
             // 
