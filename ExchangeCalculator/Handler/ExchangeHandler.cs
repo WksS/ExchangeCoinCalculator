@@ -14,7 +14,7 @@ namespace ExchangeCalculator.Handler
                 try
                 {
                     client.BaseAddress = new Uri("https://economia.awesomeapi.com.br");
-                    var response = await client.GetAsync($"/last/{from}-BRL");
+                    var response = await client.GetAsync($"/json/last/{from}-BRL");
                     var jsonResult = await response.Content.ReadAsStringAsync();
                     JObject jsonJObject = JObject.Parse(jsonResult);
                     string bid = (string)jsonJObject.SelectToken($"{from}BRL.bid");
